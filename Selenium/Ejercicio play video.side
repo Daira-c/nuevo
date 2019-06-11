@@ -1,0 +1,101 @@
+{
+  "id": "cc21abdf-5971-4e9d-8568-80af82cab819",
+  "version": "2.0",
+  "name": "prueba",
+  "url": "https://www.imdb.com/",
+  "tests": [{
+    "id": "f56e55f8-09b3-4c64-b8ed-17a9b2a03290",
+    "name": "PRUEBA EJERCICIO",
+    "commands": [{
+      "id": "9e3b1b1f-3557-474a-9a81-76de2dc562a5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com/?ref_=nv_home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3975c4f9-0c03-4ced-a20b-9a11745ec060",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fa0d81d-2cc5-41ab-a8cd-e05039b7dc76",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Celebs",
+      "targets": [
+        ["linkText=Celebs", "linkText"],
+        ["css=#navNameMenu > .navCategory > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Celebs')]", "xpath:link"],
+        ["xpath=//li[@id='navNameMenu']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/name?gender=male,female&ref_=nv_tp_cel')]", "xpath:href"],
+        ["xpath=//li[4]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Celebs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92b34c00-348e-4a5b-80e6-3a2a95501a2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Naomi Scott",
+      "targets": [
+        ["linkText=Naomi Scott", "linkText"],
+        ["css=.lister-item:nth-child(1) .lister-item-header > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Naomi Scott')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[3]/div/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/name/nm4305463')])[2]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Naomi Scott')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a9c3ca-3361-499c-a35e-df6f7a97b855",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//td[@id='img_primary']/div/div[2]/figure/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi747157017?playlistId=nm4305463&ref_=nm_ov_vi')]", "xpath:href"],
+        ["xpath=//figure/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2ec169b-c7f1-4437-a77c-4321de9462f8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//td[@id='img_primary']/div/div[2]/figure/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi747157017?playlistId=nm4305463&ref_=nm_ov_vi')]", "xpath:href"],
+        ["xpath=//figure/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0c30bad-7fba-4e27-ab90-16fd386459cc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//td[@id='img_primary']/div/div[2]/figure/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi747157017?playlistId=nm4305463&ref_=nm_ov_vi')]", "xpath:href"],
+        ["xpath=//figure/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d8670062-475f-4c30-9ce4-89832b52444f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f56e55f8-09b3-4c64-b8ed-17a9b2a03290"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

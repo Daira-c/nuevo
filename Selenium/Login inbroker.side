@@ -1,0 +1,61 @@
+{
+  "id": "018f1d64-78d1-4d6b-97b3-f54883e1df93",
+  "version": "2.0",
+  "name": "Proyecto",
+  "url": "http://200.77.226.6",
+  "tests": [{
+    "id": "f27ed982-6d78-4ad1-b581-0f27f52f9b59",
+    "name": "Untitled",
+    "commands": [{
+      "id": "9cec7c5b-d66b-45c3-bc4c-69a1c3f2b0ae",
+      "comment": "",
+      "command": "open",
+      "target": "/InbrokerV5Web/Home/index.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b84220d8-702f-40be-aa66-b3588cc8c592",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ed683ba-0fec-48e6-8e66-d4c98254a9d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=DefaultHeader_imgBtnLogin",
+      "targets": [
+        ["id=DefaultHeader_imgBtnLogin", "id"],
+        ["css=#DefaultHeader_imgBtnLogin", "css:finder"],
+        ["xpath=//img[@id='DefaultHeader_imgBtnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='DefaultHeader_imgBtnLogin_Container']/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f1cb174-9e69-4021-bb7d-d852126ad9e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ext-gen89",
+      "targets": [
+        ["id=ext-gen89", "id"],
+        ["css=#ext-gen89", "css:finder"],
+        ["xpath=//div[@id='ext-gen89']", "xpath:attributes"],
+        ["xpath=//div[@id='ext-gen83']/div", "xpath:idRelative"],
+        ["xpath=//body/div[5]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d61ff285-0a98-45d3-9c88-c0fb5d81244d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f27ed982-6d78-4ad1-b581-0f27f52f9b59"]
+  }],
+  "urls": ["http://200.77.226.6/"],
+  "plugins": []
+}
